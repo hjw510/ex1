@@ -1,0 +1,490 @@
+@charset "utf-8";
+
+/* common */
+:root {
+	--main-red: #b6342b;
+  --main-beige: #F2EDE8;
+  --main-txt1: #998465;
+
+}
+html {
+	font-size: 10px;
+	overflow-x: hidden;
+}
+body {
+	font-size: 1.6rem;
+	color: #222;
+}
+h2 {
+	font-weight: 700;
+}
+hgroup p {
+	font-size: 2rem;
+}
+section {
+}
+.container {
+	padding: 0 0rem;
+}
+.blind {
+	display: block;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+
+		/* 스킵 네비게이션 */
+.skip_nav a {
+		position: fixed;
+		left: 0;
+		top: -5rem;
+		padding: 1.6rem 2rem; 
+		color: #FFF;
+}
+.skip_nav a:focus {
+		top: 0;
+}
+
+
+/* 헤더 */
+header {
+		position: fixed;
+		left: 0;
+		right: 0;
+		z-index: 9000;
+		color: #FFF;
+}
+header h1 {
+		position: absolute;left: 0;
+}
+header h1 a {
+		display: block;height: 4rem;width: 20rem;
+		background: url(/img/logo.png) no-repeat;
+		background-position: left top;
+		background-size: 100% auto;
+		margin: 3rem;
+}
+/* gnb */
+#gnb .dep1 {
+		
+		display: flex;
+		flex-direction: row;
+		gap: 7rem;
+		justify-content: center;
+		padding-top: 2.8rem;
+		/* border: 5px solid orange; */
+}
+
+#gnb .dep1>li>a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 11.5rem; height: 4.8rem;
+		margin-bottom: 1.5rem;
+		font-family: "pretendard";
+		font-weight: 700;
+		font-size: 2.4rem;
+		line-height: 1.5rem;
+		font-weight: 600;
+		text-align: center;
+		/* border: 1px solid green; */
+}
+#gnb .dep1:hover {
+		background: var(--main-beige);
+		color: #222;
+		.dep2 {display: block;}
+}
+
+#gnb .dep1>li:hover>a {
+		text-decoration: underline var(--main-red) 3px;
+		text-underline-offset: 1rem;
+}
+
+#gnb .dep2 {
+		display: flex;flex-direction: column;
+		height: 25rem;
+		text-align: center;
+		display: none;
+		
+}
+#gnb .dep2>li:hover>a {
+		font-weight: 600;
+		text-decoration: underline 1.5px var(--main-red);
+		text-underline-offset: 0.5rem;
+}
+#gnb .dep2>li>a {
+		font-weight: 500;font-size: 1.8rem;
+		line-height: 3.2rem;
+}
+
+.header_util {
+		display: flex;
+		gap: 2.4rem;
+		align-items: center;
+		position: absolute;right: 8rem;top: 4rem;
+}
+.header_util button {font-size: 2.4rem;}
+
+.header_util .lang_wrap {position: relative;}
+.header_util .lang_wrap button {font-size: 1.6rem;}
+
+.header_util .lang_wrap ul {
+		flex-direction: column;gap: 1.5rem;
+		padding: 1.4rem 1.8rem;
+		border: 1px solid #dedede;
+		border-radius: 1rem;
+		background: #FFF;
+		color: #222;
+}
+.header_util .lang_wrap ul.active {
+		display: flex;
+}
+
+.header_util .lang_wrap button i.active {
+		transform: rotate(180deg);
+		border: 1px solid #000;
+}
+/* header.scroll .search_box {} */
+
+header .search_box {
+		position: absolute;left: 0;right: 0;top: 12rem;
+		padding: 10rem 0;
+		background: #FFF;
+		color: #222;
+		text-align: center;
+}
+header .search_box h2 {
+		color: var(--main-red);
+		font-size: 4rem;font-weight: 900;
+}
+header .search_box form {
+		display: flex;
+		justify-content: center;
+		gap: 4px;
+}
+header .search_box form input {
+		width: 48rem;height: 5.6rem;
+		padding: 0 2.4rem;
+		border-radius: 0.5rem;
+		background: var(--main-beige);
+		font-size: 1.8rem;
+}
+header .search_box form button {
+		width: 5.6rem;height: 5.6rem;
+		border-radius: 0.5rem;
+		background: #222;
+		color: #FFF;
+		font-size: 2.2rem;
+}
+
+/** 테팔 소개 **/
+.main_content {
+}
+.be_tefal {
+  height: auto
+}
+.be_tefal .container {
+  position: relative;
+}
+.be_tefal h2 {
+  position: absolute;top: 28rem; left: 57.5rem;
+  font-family: "mosserat";
+  font-size: 6rem;
+  font-weight: 400;
+  color: #FFF;
+}
+.be_tefal_content {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  color: #dedede;
+  position: absolute;left: 32rem;bottom: 32rem;
+}
+.be_tefal_content .con1,
+.be_tefal_content .con2,
+.be_tefal_content .con3,
+.be_tefal_content .con4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  text-align: center;
+}
+.be_tefal_content img {
+  width: 10rem;height: 10rem;
+}
+.be_tefal_content strong {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 5rem;
+}
+.be_tefal_content p {
+  font-size: 2.5rem;
+  line-height: 3.7rem;
+}
+.be_tefal_content .con1:hover>img,
+.be_tefal_content .con2:hover>img,
+.be_tefal_content .con3:hover>img,
+.be_tefal_content .con4:hover>img {
+  transition: all 0.3s;
+	transform: scale(1.3);
+}
+
+/* 모든 제품 스와이퍼 */
+.all_products {
+  background: #FFF;
+  font-family: "pretendard";
+  text-align: center;
+}
+.all_products h2 {
+  padding-top: 20rem;
+  font-size: 8rem;
+}
+.all_products h3 {
+  margin: 5rem;
+  font-size: 3rem;
+  color: #525252;
+  margin-bottom: 10rem;
+}
+.all_product_tabs {
+  display: flex; 
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+  
+}
+.all_product_tabs .pro_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+  color: #525252;
+}
+.all_product_tabs .pro_btn button {
+  width: 13.5rem;height: 3.5rem;
+  border: 1px solid #525252;
+  border-radius: 20rem;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 3.5rem;
+}
+#all_product_content ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12rem;
+  color: #525252;
+}
+#all_product_content li>a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 10rem 0;
+  text-align: center;
+}
+#all_product_content li>a button {
+  width: 14rem;height: 4.2rem;
+  padding: 1rem 1rem;
+  margin: 3rem 0;
+  border: 1px solid var(--main-red);
+  background: #fff;
+  color: #525252;
+  font-family: "suit";
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+#all_product_content li>a button:hover {
+  background: var(--main-red);
+  border: 1px solid var(--main-red);
+  color: #FFF;
+}
+
+/** 주방용품 종류 스와이퍼 **/
+#kitchen {
+}
+#kitchen .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kitchen_type_left img {
+  width: auto;
+}
+.kitchen_type_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px; height: 864px;
+  background: #FFF;
+  border: 30px solid var(--main-beige);
+}
+
+.kitchen_type_right strong {
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  font-family: "monserrat";
+  font-size: 3rem;
+  color: var(--main-red);font-size: 3rem;font-weight: 900;
+}
+.kitchen_type_right p {
+  margin-top: 4.4rem;
+  margin-bottom: 5.6rem;
+  color: #525252;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
+.kitchen_type_right .btn {
+  width: 19.5rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid #525252;
+  background: #fff;
+  color: #525252;
+  font-family: "suit";
+  font-size: 1.8rem;
+  text-align: center;
+}
+.kitchen_type_right .btn:hover {
+  border: 1px solid var(--main-red);
+  background: var(--main-red);
+  color: #FFF;
+}
+#kitchen .swiper-pagination {
+  width: 6rem;height:3.6rem;
+  margin-left: 180rem;
+  margin-bottom: 5rem;
+  background: var(--main-red);
+  color: #FFF;
+  line-height: 3.6rem;
+}
+
+/* 레시피 */
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  background: #FFF;
+  padding: 10rem;
+}
+.recipe h2 {
+  font-family: "pretendard";
+  color: var(--main-red);
+  font-size: 4rem;
+  margin: 5rem 10rem;
+		
+}
+.recipe ul {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 15rem;
+  padding: 10rem;
+  border: 2px solid var(--main-red);
+  border-radius: 20px;
+}
+.recipe li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+.recipe li .thumb_img {
+  width: 34rem;
+  mask-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));}
+.recipe li img:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+  mask-image: none;
+}
+.recipe li .recipe_menu {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  padding: 4.4rem 0;
+  font-family: "pretendard";
+  font-weight: 600;
+  font-size: 2.6rem;
+  color: var(--main-red);
+}
+.recipe li p {
+  margin: 4rem 0;
+  font-family: "suit";
+  color: #5e5e5e;
+  font-weight: 500;
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+}
+.recipe li .btn {
+  width: 19.5rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background: #fff;
+  color: #525252;
+  font-family: "suit";
+  font-size: 1.8rem;
+  text-align: center;
+}
+.recipe li .btn:hover {
+  
+  background: var(--main-red);
+  border: 1px solid var(--main-red);
+  color: #FFF;
+}
+
+/* 푸터  */
+
+footer {
+  background: var(--main-beige);
+  padding: 7rem 10rem;
+  
+}
+.footer_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  /* width: 1920px; */
+  margin-bottom: 7rem;
+  position: relative;
+}
+.footer_links .footer_menu {
+  display: flex;
+  gap: 4rem;color: #6a6a6a;
+  font-size: 2rem;
+  margin-left: 5rem;
+}
+.footer_sns {
+  
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  position: absolute;left: 155rem;
+}
+
+.footer_sns {font-size: 2.5rem;}
+.footer_sns>div {display: flex;gap: 1.5rem;}
+
+.corp_wrap {display: flex;gap: 2rem;}
+.corp_wrap img {width: 26rem;height: 5.5rem;}
+.corp_info {
+  display: flex;
+  flex-direction:column;
+  gap: 1rem;
+  padding-top: 1rem;
+  font-size: 1.8rem;
+  margin: 0 1rem 0 3rem;
+}
+.corp_info span {
+  margin-left: 1.5rem;
+  color: #6a6a6a;
+  font-weight: 700;
+}

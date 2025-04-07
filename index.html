@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tefal</title>
+  <!-- favicon -->
+  
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- Java Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/main.js" defer></script>
+  
+</head>
+<body>
+  <div class="skip_nav">
+    <a href="#gnb">메뉴로 이동</a>
+    <a href="#main_content">본문으로 이동</a>
+  </div>
+  <div class="wrap">
+    <header id="header">
+      <div class="container">
+        <h1><a href="/"><span class="blind">테팔</span></a></h1>
+        <nav id="gnb">
+          <ul class="dep1">
+            <li>
+              <a href="#">About</a>
+              <ul class="dep2">
+                <li><a href="#">테팔의 혁신</a></li>
+                <li><a href="#">테팔의 역사</a></li>
+                <li><a href="#">고객과의 약속</a></li>
+                <li><a href="#">TV 광고</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Brand</a>
+              <ul class="dep2">
+                <li><a href="#">테팔 더하기</a></li>
+                <li><a href="#">집밥 캠페인</a></li>
+                <li><a href="#">이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Products</a>
+              <ul class="dep2">
+                <li><a href="#">주방용품</a></li>
+                <li><a href="#">전열조리기구</a></li>
+                <li><a href="#">음료조리기구</a></li>
+                <li><a href="#">믹서기</a></li>
+                <li><a href="#">무선청소기</a></li>
+                <li><a href="#">의류관리</a></li>
+                <li><a href="#">헤어케어</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Service</a>
+              <ul class="dep2">
+                <li><a href="#">보증 및 수리</a></li>
+                <li><a href="#">고객문의</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Recipe</a>
+              <ul class="dep2">
+                <li><a href="#">전채요리</a></li>
+                <li><a href="#">메인요리</a></li>
+                <li><a href="#">후식요리</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_util">
+          <div class="lang_wrap">
+            <button>KOR <i class="ri-global-line"></i></button>
+            <ul>
+              <li><a href="#">KOR</a></li>
+              <li><a href="#">ENG</a></li>
+            </ul>
+          </div>
+          <div class="search_wrap">
+            <button>
+              <i class="ri-search-line"></i>
+              <span class="blind">검색창열기</span>
+            </button>
+          </div>
+          <div class="allmenu_wrap">
+            <button class="btn_allmenu_open">
+              <i class="ri-menu-3-line"></i>
+              <span class="blind">전체메뉴 보기</span>
+            </button>
+          </div>
+        </div>
+        <!-- <div class="search_box">
+          <h2>SEARCH</h2>
+          <form>
+            <input type="text" placeholder="필요한 정보를 검색해보세요.">
+            <button type="submit">
+              <i class="ri-search-line"></i>
+              <span class="blind">검색하기</span>
+            </button>
+          </form>
+        </div> -->
+        <!-- <div class="allmenu_popup">
+          <a href="#" class="allmenu_logo">
+            <img src="/img/logo.png" alt="tefal">
+          </a>
+          <button class="btn_allmenu_close">
+            <i class="ri-close-fill"></i>
+            <span class="blind">전체메뉴닫기</span>
+          </button>
+          <div class="allmenu_left">
+            <div class="content">
+              <dl>
+                <dt>TEL</dt>
+                <dd>080-733-7878</dd>
+                <dt>E-mail</dt>
+                <dd>tefal@tefal.co.kr</dd>
+              </dl>
+              <p>&copy; 2025. TEFAL. ALL RIGHT RESERVED.</p>
+            </div>
+          </div>
+          <div class="allmenu_right">
+            <ul class="dep1">
+              <li>
+                <a href="#">About</a>
+                <ul class="dep2">
+                  <li><a href="#">테팔의 혁신</a></li>
+                  <li><a href="#">테팔의 역사</a></li>
+                  <li><a href="#">고객과의 약속</a></li>
+                  <li><a href="#">TV 광고</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Brand</a>
+                <ul class="dep2">
+                  <li><a href="#">테팔 더하기</a></li>
+                  <li><a href="#">집밥 캠페인</a></li>
+                  <li><a href="#">이벤트</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Products</a>
+                <ul class="dep2">
+                  <li><a href="#">주방용품</a></li>
+                  <li><a href="#">전열조리기구</a></li>
+                  <li><a href="#">음료조리기구</a></li>
+                  <li><a href="#">믹서기</a></li>
+                  <li><a href="#">무선청소기</a></li>
+                  <li><a href="#">의류관리</a></li>
+                  <li><a href="#">헤어케어</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Service</a>
+                <ul class="dep2">
+                  <li><a href="#">보증 및 수리</a></li>
+                  <li><a href="#">고객문의</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Recipe</a>
+                <ul class="dep2">
+                  <li><a href="#">전채요리</a></li>
+                  <li><a href="#">메인요리</a></li>
+                  <li><a href="#">후식요리</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </header>
+    <main id="main_content">
+      <div class="main_visual">
+        <video src="/video/video.mp4" playsinline autoplay muted loop></video>
+      </div>
+      <!-- 테팔 소개 -->
+      <section class="be_tefal">
+        <div class="container">
+          <img src="/img/eiffel_tower1.jpg" alt="">
+          <h2>
+            <strong>BE TEFAL, BE HEALING LIFE</strong>
+          </h2>
+          <div class="be_tefal_content">
+            <div class="con1">
+              <img src="img/icon1.png" alt="역사">
+              <strong>160년 이상의 역사</strong>
+              <p>프랑스 전통의<br>주방용품 브랜드</p>
+            </div>
+            <div class="con2">
+              <img src="img/icon2.png" alt="안심소재">
+              <strong>안심 소재 사용</strong>
+              <p>안심 코팅제와<br>안심 소재 사용</p> 
+            </div>
+            <div class="con3">
+              <img src="img/icon3.png" alt="서비스">
+              <strong>고객 만족 우선</strong>
+              <p>철저하고<br>믿음직한 품질관리</p>
+            </div>
+            <div class="con4">
+              <img src="img/icon4.png" alt="디자인">
+              <span><strong>감각적인 디자인</strong></span>
+              <p>기능과 디자인이<br>완벽한 테팔</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 모든 제품 스와이퍼 -->
+      <section class="all_products">
+        <h2>PRODUCTS</h2>
+        <h3>테팔의 오랜 역사가 담긴 기술력과 완성도 높은 디자인 소개합니다.</h3>
+        <div class="all_product_tabs">
+          <div class="pro_btn">
+            <a href="#"><img src="img/kit_icon.png" alt=""></a>
+            <button>주방용품</button>
+          </div>
+          <div class="pro_btn">
+            <a href="#"><img src="img/drink_icon.png" alt=""></a>
+            <button>음료조리기구</button>
+          </div>
+          <div class="pro_btn">
+            <a href="#"><img src="img/blender_icon.png" alt=""></a>
+            <button>믹서기</button>
+          </div>
+          <div class="pro_btn">
+            <a href="#"><img src="img/cook_icon.png" alt=""></a>
+            <button>전열조리기구</button>
+          </div>
+          <div class="pro_btn">
+            <a href="#"><img src="img/cordless_icon.png" alt=""></a>
+            <button>무선청소기</button>
+          </div>
+          <div class="pro_btn">
+            <a href="#"><img src="img/clothes_icon.png" alt=""></a>
+            <button>의류관리</button>
+          </div>
+          <div class="pro_btn">
+            <a href="#"><img src="img/hair_icon.png" alt=""></a>
+            <button>헤어케어</button>
+          </div>
+        </div>
+        <div class="swiper" id="all_product_content">
+          <div class="swiper-wrapper">
+            <!--주방용품-->
+            <ul class="swiper-slide">
+              <li>
+                <a href="#">
+                  <img src="/img/kit1.png" alt="프라이팬">
+                  <strong>프라이팬</strong>
+                  <button>더 알아보기</button>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/img/kit2.png" alt="매직핸즈">
+                  <strong>매직핸즈</strong>
+                  <button>더 알아보기</button>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/img/kit3.png" alt="밀폐용기">
+                  <strong>밀폐용기</strong>
+                  <button>더 알아보기</button>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/img/kit4.png" alt="조리도구">
+                  <strong>조리도구</strong>
+                  <button>더 알아보기</button>
+                </a>
+              </li>
+            </ul>
+            <!--음료조리기구-->
+            <ul class="swiper-slide">
+              <li>
+                <a href="#">
+                  <img src="/img/drink1.png" alt="">
+                  <strong>커피메이커</strong>
+                  <button>더 알아보기</button>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/img/drink2.png" alt="">
+                  <strong>전기주전자</strong>
+                  <button>더 알아보기</button>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/img/drink3.png" alt="">
+                  <strong>에스프레소 머신</strong>
+                  <button>더 알아보기</button>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/img/drink4.png" alt="">
+                  <strong>비어텐더</strong>
+                  <button>더 알아보기</button>
+                </a>
+              </li>
+            </ul>
+            <!--믹서기-->
+            <ul class="swiper-slide">
+              <li>
+                <a href="#">
+                  <img src="/img/blender1.png" alt="">
+                  <strong>믹서기</strong>
+                  <button>더 알아보기</button>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/img/blender2.png" alt="">
+                  <strong>핸드블렌더</strong>
+                  <button>더 알아보기</button>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/img/blender3.png" alt="">
+                  <strong>다지기</strong>
+                  <button>더 알아보기</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="content_box"></div>
+          <div class="content_box"></div>
+          <div class="content_box"></div>
+          <div class="content_box"></div>
+          <div class="content_box"></div>
+          <div class="content_box"></div> -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- *주방용품 종류 스와이퍼* -->
+      <section class="swiper" id="kitchen">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="kitchen_type_left">
+              <img src="img/l_frying_pan.png" class="frying_pan" alt="frying_pan">
+            </div>
+            <div class="kitchen_type_right">
+              <strong>TEFAL MERLOT FRYING PAN</strong>
+              <img src="img/r_frying_pan.png" alt="">
+              <p>
+                강력한 티타늄 코팅과 풀와이드 인덕션 기술로<br>다양한 요리를 더 빠르고 맜있게!
+              </p>
+              <a href="#" class="btn">자세히 보기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="kitchen_type_left">
+              <img src="img/l_onepick_pot.png" alt="onepick_pot">
+            </div>
+            <div class="kitchen_type_right">
+              <strong>TEFAL ONE PICK POT</strong>
+              <img src="img/r_onepick_pot.png" alt="onepick_pot">
+              <p>
+                프라이팬, 볶음팬, 냄비로 3가지 기능을 하나에 담아<br>모든 요리를 하나로 간편하게!
+              </p>
+              <a href="#" class="btn">자세히 보기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="kitchen_type_left">
+              <img src="img/l_magic_hands.png" alt="magic_hands">
+            </div>
+            <div class="kitchen_type_right">
+              <strong>TEFAL MAGIC HANDS</strong>
+              <img src="img/r_magic_hands.png" alt="magic_hands">
+              <p>
+                여러가지 요리도 동시에, 마법같은 플레이팅으로<br>더 빠르고 손쉽게 정리하는 수납!
+              </p>
+              <a href="#" class="btn">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <!-- *레시피*-->
+      <section class="recipe">
+        <h2>Recipe with TEFAL !</h2>
+        <ul class="recipe_content">
+          <li>
+            <a href="#">
+              <div class="thumb_img">
+                <img src="/img/beforecook.jpg" alt="전채요리">
+              </div>
+            </a>
+            <span class="recipe_menu">Appetizer Recipe</span>
+            <p>전채 요리를<br>테팔과 함께 만들어보세요!</p>
+            <a href="#" class="btn">레시피 보기</a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb_img">
+                <img src="/img/maincook.jpg" alt="메인요리">
+              </div>
+            </a>
+            <span class="recipe_menu">Main dishes Recipe</span>
+            <p>메인 요리를<br>테팔과 함께 만들어보세요!</p>
+            <a href="#" class="btn">레시피 보기</a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb_img">
+                <img src="/img/aftercook.jpg" alt="후식요리">
+              </div>
+            </a>  
+            <span class="recipe_menu">Sweet Dessert Recipe</span>
+            <p>맛있는 디저트를<br>테팔과 함께 만들어보세요!</p>
+            <a href="#" class="btn">레시피 보기</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- **푸터** -->
+    <footer id="footer">
+      <div class="footer_links">
+        <ul class="footer_menu">
+          <li><a href="#">오시는 길</a></li>
+          <li><a href="#">이메일 무단수집거부</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <div class="footer_sns">
+          <a href="#"><span class="blind">유튜브br</span><i class="ri-youtube-fill"></i></a>
+          <a href="#"><span class="blind">인스타그램</span><i class="ri-instagram-fill"></i></a>
+          <a href="#"><span class="blind">트위터 엑스</span><i class="ri-twitter-x-fill"></i></a>
+        </div>
+      </div>
+      <div class="corp_wrap">
+        <a href="#"><img src="/img/logo.png" alt="테팔로고"></a>
+        <div class="corp_info">
+          <address>
+            경기도 안양시 만안구 시민대로 34, 6층 테팔서비스센터
+            <span>TEL</span> 031-8033-7117
+            <span>E-mail</span> tefal@tefal.co.kr
+          </address>
+          <p class="copyright">&copy; 2025. TEFAL. ALL RIGHT RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
