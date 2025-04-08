@@ -123,6 +123,7 @@ header h1 a {
   gap: 2.4rem;
   align-items: center;
   position: absolute;right: 8rem;top: 4rem;
+  transform: translateY(-50%);
 }
 .header_util button {font-size: 2.4rem;}
 
@@ -132,6 +133,8 @@ header h1 a {
 .header_util .lang_wrap ul {
   flex-direction: column;gap: 1.5rem;
   padding: 1.4rem 1.8rem;
+  position: absolute;left: 50%;top: 2.5rem;
+  transform: translateX(-50%);
   border: 1px solid #dedede;
   border-radius: 1rem;
   background: #FFF;
@@ -143,7 +146,7 @@ header h1 a {
 
 .header_util .lang_wrap button i.active {
   transform: rotate(180deg);
-  border: 1px solid #000;
+  border: 1px solid red;
 }
 /* header.scroll .search_box {} */
 
