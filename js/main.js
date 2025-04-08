@@ -1,6 +1,6 @@
 const langBtn = document.querySelector('.lang_wrap button')
 const langList = document.querySelector('.lang_wrap ul')
-const langIco = document.querySelector('.lang_wrap button span')
+const langIco = document.querySelector('.lang_wrap button i') // 수정된 부분
 
 langBtn.addEventListener('click', function() {
   langList.classList.toggle('active')

@@ -57,6 +57,7 @@ header {
 }
 header h1 {
   position: absolute;left: 0;
+  
 }
 header h1 a {
   display: block;height: 4rem;width: 20rem;
@@ -131,14 +132,18 @@ header h1 a {
 .header_util .lang_wrap button {font-size: 1.6rem;}
 
 .header_util .lang_wrap ul {
-  flex-direction: column;gap: 1.5rem;
-  padding: 1.4rem 1.8rem;
-  position: absolute;left: 50%;top: 2.5rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 2.5rem;
   transform: translateX(-50%);
+  padding: 1.4rem 1.8rem;
   border: 1px solid #dedede;
   border-radius: 1rem;
   background: #FFF;
   color: #222;
+  display: none; 
 }
 .header_util .lang_wrap ul.active {
   display: flex;
@@ -146,7 +151,6 @@ header h1 a {
 
 .header_util .lang_wrap button i.active {
   transform: rotate(180deg);
-  border: 1px solid red;
 }
 /* header.scroll .search_box {} */
 
